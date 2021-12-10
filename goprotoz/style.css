@@ -1,0 +1,157 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+
+:root {
+    --white: #ffffff;
+    --light-white: #FFFFFFB2;
+}
+
+@keyframes roll {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+body {
+    background: transparent linear-gradient(181deg, #0F0C40 0%, #040B1E 100%) 0% 0% no-repeat padding-box;
+    color: var(--light-white);
+    font: normal normal normal 17px/22px Poppins;
+}
+
+h1 {
+    color: var(--white);
+    font: normal normal normal 55px/70px Abril Fatface;
+}
+
+h2,
+h3,
+h4,
+h5 {
+    color: var(--white);
+}
+
+ul {
+    padding: 0;
+}
+
+.container {
+    background: transparent url('./img/BACKGROUND/back.png') 40% 2% no-repeat padding-box;
+}
+
+.nav-link {
+    color: var(--light-white);
+}
+
+.nav-link:hover {
+    color: var(--white);
+}
+
+.active {
+    color: var(--white);
+    font-weight: bold;
+}
+
+.news1,
+.news2,
+.news3,
+.sat1,
+.sat2,
+.sat3 {
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.earth {
+    background-image: url(./img/earth/Image\ 93.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 80vh;
+    position: relative;
+    animation: roll 30s infinite linear;
+}
+
+.MaskGroup {
+    background-image: url(./img/MaskGroup84/MaskGroup84.png);
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 500px;
+}
+
+.sat1 {
+    background-image: url(./img/sat/sat1.png);
+    height: 400px;
+}
+
+.sat2 {
+    background-image: url(./img/sat/sat2.png);
+    height: 400px;
+}
+
+.sat3 {
+    background-image: url(./img/sat/sat3.png);
+    height: 400px;
+}
+
+.news1 {
+    background-image: url(./img/News/News1.png);
+    height: 600px;
+    width: 300px;
+}
+
+.news1 h3 {
+    right: -50px;
+}
+
+.news2 h3 {
+    right: -50px;
+    bottom: 50px;
+}
+
+.news3 h3 {
+    right: -50px;
+}
+
+.news2 {
+    background-image: url(./img/News/News2.png);
+    height: 600px;
+    width: 300px;
+}
+
+.news3 {
+    background-image: url(./img/News/News3.png);
+    height: 600px;
+    width: 300px;
+}
+
+.image90 {
+    background-image: url(./img/Image90/Image90.png);
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 400px;
+}
+
+@media (max-width:576px) {
+    body {
+        font: normal normal normal 14px/20px Poppins;
+    }
+    h1 {
+        font: normal normal normal 36px/48px Abril Fatface;
+    }
+    .eth {
+        background-image: url(./img/earth/Image\ 93.png);
+        background-size: 60% 80%;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+}
